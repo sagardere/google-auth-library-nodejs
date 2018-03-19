@@ -18,7 +18,7 @@ var User = require('../models/users');
     });
 
     // route for logging out
-    router.get('/logout', function(req, res) {
+    router.get('/logout', (req, res) => {
         req.logout();
         res.redirect('/');
     });
